@@ -45,8 +45,6 @@ func (response *NullString) UnmarshalJSON(data []byte) error {
         if *str != "" {
             response.Valid = true
             response.String = *str
-        } else {
-            response.Valid = false
         }
     } else {
         response.Valid = false
